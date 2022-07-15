@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sondaggi>
+  <sondaggio id="Francesco Bottani" useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36">
+    <risposta value="5,4,50,50,50,50" soggetto="Francesco Bottani"/>
+    <risposta value="50,50,50,100,50,50" soggetto="Andrea Marcassoli"/>
+    <risposta value="50,50,100,100,50,50" soggetto="Davide Moroni"/>
+    <risposta value="" soggetto="Daniel Hasanaj"/>
+    <risposta value="" soggetto="Dennis Azzola"/>
+  </sondaggio>
+  <sondaggio id="Dennis Azzola" useragent="Mozilla/5.0 (Linux; Android 9; VTR-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36">
+    <risposta value="" soggetto="Francesco Bottani"/>
+    <risposta value="" soggetto="Andrea Marcassoli"/>
+    <risposta value="" soggetto="Davide Moroni"/>
+    <risposta value="" soggetto="Daniel Hasanaj"/>
+    <risposta value="0,0,50,50,50,50" soggetto="Dennis Azzola"/>
+  </sondaggio>
+  <sondaggio id="Daniel Hasanaj" useragent="Mozilla/5.0 (Linux; Android 9; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36">
+    <risposta value="" soggetto="Francesco Bottani"/>
+    <risposta value="" soggetto="Andrea Marcassoli"/>
+    <risposta value="" soggetto="Davide Moroni"/>
+    <risposta value="50,50,73,34,50,50" soggetto="Daniel Hasanaj"/>
+    <risposta value="" soggetto="Dennis Azzola"/>
+  </sondaggio>
+  <sondaggio id="Davide Moroni" useragent="Mozilla/5.0 (Linux; Android 10; EML-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36">
+    <risposta value="" soggetto="Francesco Bottani"/>
+    <risposta value="" soggetto="Andrea Marcassoli"/>
+    <risposta value="92,75,50,50,50,50" soggetto="Davide Moroni"/>
+    <risposta value="" soggetto="Daniel Hasanaj"/>
+    <risposta value="" soggetto="Dennis Azzola"/>
+  </sondaggio>
+  <sondaggio id="Andrea Marcassoli" useragent="">
+    <risposta value="" soggetto="Francesco Bottani"/>
+    <risposta value="" soggetto="Andrea Marcassoli"/>
+    <risposta value="" soggetto="Davide Moroni"/>
+    <risposta value="" soggetto="Daniel Hasanaj"/>
+    <risposta value="" soggetto="Dennis Azzola"/>
+  </sondaggio>
+  <sondaggio id="Beatrice Signori" useragent="">
+    <risposta value="" soggetto="Francesco Bottani"/>
+    <risposta value="" soggetto="Andrea Marcassoli"/>
+    <risposta value="" soggetto="Davide Moroni"/>
+    <risposta value="" soggetto="Daniel Hasanaj"/>
+    <risposta value="" soggetto="Dennis Azzola"/>
+  </sondaggio>
+</sondaggi>

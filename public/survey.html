@@ -46,32 +46,20 @@
 </head>
 
 
-<body class="top-navigation pushy-left-side pushy-left-open">
-    <!--LEFT-SIDE MENU-->
-    <nav class="pushy pushy-left">
-        <ul class="list-unstyled">
-            <li><a class="logo" href="index.html"><img alt="" class="logo img-responsive"
-                        src="assets/images/logo-light.png"></a></li>
+<body class="top-navigation pushy-left-side pushy-left-open" onload="scriviSoggetto()">
+     <!--LEFT-SIDE MENU-->
+ <nav class="pushy pushy-left">
+    <ul class="list-unstyled">
+        <li><a class="logo" href="index.html"><img alt="" class="logo img-responsive" src="assets/images/20000H.png"></a></li>
 
-            <a class="submenu-link" href="index.html">Home</a>
+        <a class="submenu-link" href="index.html">Home</a>
+        <a href="whats-your-opinion.html">What's Your Opinion</a>
+        <a class="submenu-link" href="results.html">Results</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="coming-soon.html">Coming Soon</a>
 
-            <a href="whats-your-opinion.html">What's Your Opinion</a>
-
-            <li class="pushy-submenu">
-                <a class="submenu-link" href="#">Results<i class="fa fa-angle-down"></i></a>
-                <ul>
-                    <li><a href="results-moro.html">Moro</a></li>
-                    <li><a href="results-dagne.html">Dagne</a></li>
-                    <li><a href="results-botta.html">Botta</a></li>
-                    <li><a href="results-marca.html">Marca</a></li>
-                    <li><a href="results-den.html">Den</a></li>
-                </ul>
-            </li>
-            <a href="contact-us.html">Contact Us</a>
-            <a href="coming-soon.html">Coming Soon</a>
-
-        </ul>
-    </nav>
+    </ul>
+</nav>
 
     <!-- Site Overlay -->
     <div class="site-overlay"></div>
@@ -91,7 +79,7 @@
                     <div class="row">
                         <div class="col-sm-3 col-xs-6">
                             <a class="logo" href="index.html"><img alt="" class="logo img-responsive"
-                                    src="assets/images/logo-light.png"></a>
+                                src="assets/images/20000H.png"></a>
                         </div>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
@@ -150,7 +138,7 @@
                     <div class="vertical-center-js">
                         <h1 class="section-title mb20">what about </h1>
                         <br>
-                        <h1 class="section-sub-title">Moro</h1>
+                        <h1 class="section-sub-title" id="soggetto"></h1>
                     </div>
                 </div>
             </div>
@@ -191,11 +179,11 @@
                     <div class="collapse" id="cartaForza">
                         <div class="card-body">
                             <label class="form-label" for="R1">Forza Pre-Timeskip</label>
-                            <input type="range" name="giudicaAltri" class="default-range" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" class="default-range" id="R1-1" disabled>
                             <label class="form-label" for="R1">Forza Ora</label>
-                            <input type="range" name="giudicaAltri" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" id="R1-2" disabled>
                             <label class="form-label" for="R1">Forza Se</label>
-                            <input type="range" name="giudicaSe" id="R1" disabled>
+                            <input type="range" name="giudicaSe" id="R1-3" disabled>
                         </div>
                     </div>
                 </div>
@@ -211,11 +199,11 @@
                     <div class="collapse" id="cartaForza1">
                         <div class="card-body">
                             <label class="form-label" for="R1">Aspetto fisico Pre-Timeskip</label>
-                            <input type="range" name="giudicaAltri" class="default-range" id="R2" disabled>
+                            <input type="range" name="giudicaAltri" class="default-range" id="R2-1" disabled>
                             <label class="form-label" for="R1">Aspetto fisico Ora</label>
-                            <input type="range" name="giudicaAltri" id="R2" disabled>
+                            <input type="range" name="giudicaAltri" id="R2-2" disabled>
                             <label class="form-label" for="R1">aspetto fisico Se</label>
-                            <input type="range" name="giudicaSe" id="R2" disabled>
+                            <input type="range" name="giudicaSe" id="R2-3" disabled>
 
                         </div>
                     </div>
@@ -232,11 +220,11 @@
                     <div class="collapse" id="cartasfigatoragazze">
                         <div class="card-body">
                             <label class="form-label" for="R1">sfiga Pre-Timeskip</label>
-                            <input type="range" name="giudicaAltri" class="default-range" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" class="default-range" id="R3-1" disabled>
                             <label class="form-label" for="R1">sfiga Ora</label>
-                            <input type="range" name="giudicaAltri" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" id="R3-2" disabled>
                             <label class="form-label" for="R1">sfiga Se</label>
-                            <input type="range" name="giudicaSe" id="R1" disabled>
+                            <input type="range" name="giudicaSe" id="R3-3" disabled>
                         </div>
                     </div>
                 </div>
@@ -252,11 +240,11 @@
                     <div class="collapse" id="cartafortuna">
                         <div class="card-body">
                             <label class="form-label" for="R1">Fortuna Pre-Timeskip</label>
-                            <input type="range" name="giudicaAltri" class="default-range" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" class="default-range" id="R4-1" disabled>
                             <label class="form-label" for="R1">Fortuna Ora</label>
-                            <input type="range" name="giudicaAltri" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" id="R4-2" disabled>
                             <label class="form-label" for="R1">fortuna Se</label>
-                            <input type="range" name="giudicaSe" id="R1" disabled>
+                            <input type="range" name="giudicaSe" id="R4-3" disabled>
                         </div>
                     </div>
                 </div>
@@ -272,11 +260,11 @@
                     <div class="collapse" id="cartasensibilita">
                         <div class="card-body">
                             <label class="form-label" for="R1">Sensibilità Pre-Timeskip</label>
-                            <input type="range" name="giudicaAltri" class="default-range" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" class="default-range" id="R5-1" disabled>
                             <label class="form-label" for="R1">Sensibilità Ora</label>
-                            <input type="range" name="giudicaAltri" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" id="R5-2" disabled>
                             <label class="form-label" for="R1">sensibilità Se</label>
-                            <input type="range" name="giudicaSe" id="R1" disabled>
+                            <input type="range" name="giudicaSe" id="R5-3" disabled>
                         </div>
                     </div>
                 </div>
@@ -292,11 +280,11 @@
                     <div class="collapse" id="cartaintraprendenza">
                         <div class="card-body">
                             <label class="form-label" for="R1">Intraprendenza Pre-Timeskip</label>
-                            <input type="range" name="giudicaAltri" class="default-range" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" class="default-range" id="R6-1" disabled>
                             <label class="form-label" for="R1">Intraprendenza Ora</label>
-                            <input type="range" name="giudicaAltri" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" id="R6-2" disabled>
                             <label class="form-label" for="R1">intraprendenza Se</label>
-                            <input type="range" name="giudicaSe" id="R1" disabled>
+                            <input type="range" name="giudicaSe" id="R6-3" disabled>
                         </div>
                     </div>
                 </div>
@@ -312,11 +300,11 @@
                     <div class="collapse" id="cartaagilita">
                         <div class="card-body">
                             <label class="form-label" for="R1">Agilità Pre-Timeskip</label>
-                            <input type="range" name="giudicaAltri" class="default-range" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" class="default-range" id="R7-1" disabled>
                             <label class="form-label" for="R1">Agilità Ora</label>
-                            <input type="range" name="giudicaAltri" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" id="R7-2" disabled>
                             <label class="form-label" for="R1">agilità Se</label>
-                            <input type="range" name="giudicaSe" id="R1" disabled>
+                            <input type="range" name="giudicaSe" id="R7-3" disabled>
                         </div>
                     </div>
                 </div>
@@ -332,11 +320,11 @@
                     <div class="collapse" id="cartanerdaggine">
                         <div class="card-body">
                             <label class="form-label" for="R1">Nerdaggine Pre-Timeskip</label>
-                            <input type="range" name="giudicaAltri" class="default-range" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" class="default-range" id="R8-1" disabled>
                             <label class="form-label" for="R1">Nerdaggine Ora</label>
-                            <input type="range" name="giudicaAltri" id="R1" disabled>
+                            <input type="range" name="giudicaAltri" id="R8-2" disabled>
                             <label class="form-label" for="R1">nerdaggine Se</label>
-                            <input type="range" name="giudicaSe" id="R1" disabled>
+                            <input type="range" name="giudicaSe" id="R8-3" disabled>
                         </div>
                     </div>
                 </div>
@@ -358,20 +346,31 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="assets/js/init.js"></script>
     <script>
+        function scriviSoggetto(){
+            let sog = getUrlVars()["sog"]; //qua arriva il nome
+            document.getElementById('soggetto').innerHTML = sog;
+        }
+        
         function vota() {
-            console.log("entro nella funzione vota");
+            let autore ='';
+            let soggetto='';
+            if(document.getElementById('protagonista').checked && !document.getElementById('esterno').checked){
+                autore = document.getElementById("soggetto").innerHTML; //l'autore è il soggetto
+                soggetto = autore;
+            }
+            else if(!document.getElementById('protagonista').checked && document.getElementById('esterno').checked){
+                soggetto = document.getElementById("soggetto").innerHTML; //l'autore sta giudicando qualcuno. trova un metodo alternativo per collegare questo autore ai suoi altri sondaggi. lo posso fare salvando tutto il suo user agent ogni sondaggio.
+            }
+            let userAgent= navigator.userAgent;
+            //soggetto = document.getElementById("soggetto").value; // var first = getUrlVars()["soggetto"];
+            let R1 = document.getElementById('R1-3').value;
+            let R2 = document.getElementById('R2-3').value;
+            let R3 = document.getElementById('R3-2').value;
+            let R4 = document.getElementById('R4-2').value;
+            let R5 = document.getElementById('R5-1').value;
+            let R6 = document.getElementById('R6-1').value;
 
-
-            let soggetto = document.getElementById("soggetto").value;
-            let R1 = document.getElementById('R1').value;
-            let R2 = document.getElementById('R2').value;
-            let R3 = document.getElementById('R3').value;
-            let R4 = document.getElementById('R4').value;
-            let R5 = document.getElementById('R5').value;
-            let R6 = document.getElementById('R6').value;
-
-
-            const data = { soggetto, R1, R2, R3, R4, R5, R6 };
+            const data = { autore, soggetto, R1, R2, R3, R4, R5, R6, userAgent};//mettilo nel backend
             const options = {
                 method: 'POST',
                 headers: {
@@ -415,6 +414,19 @@
                 });
             }
         }
+
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1].replace('+',' ');
+            }
+            return vars;
+        }
+
     </script>
 </body>
 
