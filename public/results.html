@@ -137,8 +137,6 @@
                                 <br><br>
                                 <button class="btn btn-dark btn-lg" style="color: black;" type="submit"
                                     onclick='getResults()'>results</button>
-
-
                             </div>
                         </div>
                     </div>
@@ -169,10 +167,11 @@
                 },
                 body: JSON.stringify(data)
             };
-            fetch('http://' + self.location.host + '/postPerPSW', options).then(res => { 
-                document.write(res.json()); //porcoddio
-            });
-           
+            let response = fetch('http://' + self.location.host + '/postPerPSW', options).then(res => res.json());
+            //document.write(await response.body);
+            //document.location.href = await response.json.redirect;
+            
+
         } 
     </script>
 </body>

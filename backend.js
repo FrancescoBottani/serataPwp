@@ -20,12 +20,11 @@ app.post('/sendSondaggio', (request, response) => {
 app.post('/postPerPSW', (req, res) => {   
   let psw = req.body.psw;
   if( psw == "smartmf" ){ 
-    res.json({redirect : '/public/resultsPermitted.html'});  
+    res.end('/resultsPermitted.html'); 
     }
   else{
-    res.send('Incorrect Username and/or Password!');
+    res.end('Incorrect Password!');
   } 
-
   });  
 
   app.get('/a', (req, res) => {
