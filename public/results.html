@@ -155,7 +155,7 @@
 
     <script>
 
-        function getResults() {
+        async function getResults() {
             psw = document.getElementById("password").value;
             const data = { psw };
             const options = {
@@ -167,10 +167,18 @@
                 },
                 body: JSON.stringify(data)
             };
-            let response = fetch('http://' + self.location.host + '/postPerPSW', options).then(res => res.json());
-            //document.write(await response.body);
-            //document.location.href = await response.json.redirect;
-            
+
+            let response = await fetch('http://' + self.location.host + '/postPerPSW', options);
+            if (response.ok) { // if HTTP-status is 200-299
+                // get the response body (the method explained below)
+                let redirect = await response.text();
+                if(redirect.charAt(0) == '/')
+                document.location.href = 'http://' + self.location.host + redirect;
+                else
+                alert("You are not my owner! Get Rekt Noob!");
+            } else {
+                alert("HTTP-Error: " + response.status);
+            }
 
         } 
     </script>

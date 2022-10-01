@@ -1,6 +1,8 @@
 
-const express = require('express')
+const express = require('express');
+const { stringify } = require('querystring');
 const app = express()
+var rispostadadebuggare;
 
 app.listen(3000, () => console.log("listening on port 3000"));
 app.use(express.json({ limit: '1mb' }));
@@ -20,6 +22,7 @@ app.post('/sendSondaggio', (request, response) => {
 app.post('/postPerPSW', (req, res) => {   
   let psw = req.body.psw;
   if( psw == "smartmf" ){ 
+    //res.end('/resultsPermitted.html'); 
     res.end('/resultsPermitted.html'); 
     }
   else{
